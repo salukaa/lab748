@@ -67,10 +67,6 @@ class TextProcessor:
     def word_count(self):
         return sum(len(s) for s in self._sentences)
 
-    def as_text(self):
-        return "".join(s.as_text() + e
-                       for s, e in zip(self._sentences, self._endings))
-
     def __str__(self):
         lines = "\n".join(
             f"  [{i+1}] {s.as_text()}"

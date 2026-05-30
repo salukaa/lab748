@@ -90,11 +90,7 @@ class Main:
 
         processor.replace_words(self.replacements).delete_words(self.deletions)
 
-        print(f"Після редагування:\n{processor.as_text()}")
-        print(f"Загальна кількість слів: {processor.word_count()}")
-
-        print(f"\nДокладно:\n{processor}")
-
+        print(f"Після редагування: {processor}")
 
 if __name__ == "__main__":
     app = Main(
